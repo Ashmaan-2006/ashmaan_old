@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashmaan Sohail - Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-png" href="favicon.png">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Cursor effect -->
+    <div class="cursor-effect"></div>
+    
+    <!-- Easter egg animation -->
+    <div class="easter-egg" id="easterEgg">
+      <div class="easter-egg-content">
+        Hello World! 🎉
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="logo" id="logo">
+          <i data-feather="sparkles" class="icon-primary"></i>
+          <span>Ashmaan</span>
+        </div>
+        <nav class="nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i data-feather="sun" class="icon-sun"></i>
+            <i data-feather="moon" class="icon-moon"></i>
+          </button>
+          <a href="#contact" class="btn btn-outline btn-sm">Get in touch</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb navigation -->
+    <div class="breadcrumb" id="breadcrumb">
+      <div class="container">
+        <a href="#" class="breadcrumb-home">
+          <i data-feather="home" class="icon-primary icon-sm"></i>
+          <span class="sr-only">Home</span>
+        </a>
+        <div class="breadcrumb-separator" id="breadcrumbSeparator">
+          <i data-feather="chevron-right" class="icon-muted icon-sm"></i>
+        </div>
+        <a href="#" class="breadcrumb-current" id="breadcrumbCurrent">
+          Home
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Hi, I'm <span class="text-primary typing-effect" id="nameTyping">Ashmaan</span>
+            </h1>
+            <p class="hero-subtitle">
+              A passionate developer building <span class="text-primary typing-effect" id="workTyping">amazing digital experiences</span>
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Contact Me</a>
+              <a href="#projects" class="btn btn-outline">View My Work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-image">
+              <img src="picture.jpg" alt="Ashmaan" class="img-profile">
+            </div>
+            <div class="about-content">
+              <p>
+                I'm a passionate developer with expertise in building modern web applications. 
+                With a strong foundation in frontend and backend technologies, I create 
+                seamless digital experiences that solve real-world problems.
+              </p>
+              <p>
+                When I'm not coding, you can find me exploring new technologies, contributing 
+                to open source projects, or enjoying outdoor activities.
+              </p>
+              <div class="about-actions">
+                <a href="resume.pdf" class="btn btn-outline" download>Open Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card" data-skill="90">
+              <h3 class="skill-name">JavaScript</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%"></div>
+              </div>
+              <div class="skill-level">90%</div>
+            </div>
+            <div class="skill-card" data-skill="85">
+              <h3 class="skill-name">TypeScript</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%"></div>
+              </div>
+              <div class="skill-level">85%</div>
+            </div>
+            <div class="skill-card" data-skill="92">
+              <h3 class="skill-name">React</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%"></div>
+              </div>
+              <div class="skill-level">92%</div>
+            </div>
+            <div class="skill-card" data-skill="88">
+              <h3 class="skill-name">Next.js</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%"></div>
+              </div>
+              <div class="skill-level">88%</div>
+            </div>
+            <div class="skill-card" data-skill="80">
+              <h3 class="skill-name">Node.js</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%"></div>
+              </div>
+              <div class="skill-level">80%</div>
+            </div>
+            <div class="skill-card" data-skill="95">
+              <h3 class="skill-name">CSS/Tailwind</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%"></div>
+              </div>
+              <div class="skill-level">95%</div>
+            </div>
+            <div class="skill-card" data-skill="85">
+              <h3 class="skill-name">Git</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%"></div>
+              </div>
+              <div class="skill-level">85%</div>
+            </div>
+            <div class="skill-card" data-skill="75">
+              <h3 class="skill-name">UI/UX Design</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 0%"></div>
+              </div>
+              <div class="skill-level">75%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-card-inner">
+                <!-- Front of card -->
+                <div class="project-card-front">
+                  <div class="project-image">
+                    <img src="https://via.placeholder.com/600x300?text=Project+1" alt="Project Alpha">
+                  </div>
+                  <div class="project-content">
+                    <h3 class="project-title">Project Alpha</h3>
+                    <p class="project-description">
+                      A full-stack application with real-time updates and interactive dashboards.
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">React</span>
+                      <span class="tag">Node.js</span>
+                      <span class="tag">MongoDB</span>
+                    </div>
+                    <button class="btn btn-sm project-flip-btn">Learn More</button>
+                  </div>
+                </div>
+                <!-- Back of card -->
+                <div class="project-card-back">
+                  <h3 class="project-title">Project Alpha</h3>
+                  <p class="project-description">
+                    A full-stack application with real-time updates and interactive dashboards.
+                    This project showcases my ability to build complex applications with modern
+                    technologies and best practices.
+                  </p>
+                  <div class="project-actions">
+                    <a href="#" class="btn btn-outline btn-sm" target="_blank">
+                      <i data-feather="external-link" class="icon-sm"></i>
+                      Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline btn-sm" target="_blank">
+                      <i data-feather="github" class="icon-sm"></i>
+                      View Code
+                    </a>
+                  </div>
+                  <button class="btn btn-ghost btn-sm project-flip-btn">Back to Preview</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-inner">
+                <!-- Front of card -->
+                <div class="project-card-front">
+                  <div class="project-image">
+                    <img src="https://via.placeholder.com/600x300?text=Project+2" alt="Project Beta">
+                  </div>
+                  <div class="project-content">
+                    <h3 class="project-title">Project Beta</h3>
+                    <p class="project-description">
+                      An e-commerce platform with payment integration and inventory management.
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">Next.js</span>
+                      <span class="tag">Stripe</span>
+                      <span class="tag">Tailwind CSS</span>
+                    </div>
+                    <button class="btn btn-sm project-flip-btn">Learn More</button>
+                  </div>
+                </div>
+                <!-- Back of card -->
+                <div class="project-card-back">
+                  <h3 class="project-title">Project Beta</h3>
+                  <p class="project-description">
+                    An e-commerce platform with payment integration and inventory management.
+                    This project demonstrates my ability to build secure, scalable e-commerce
+                    solutions with modern payment processing.
+                  </p>
+                  <div class="project-actions">
+                    <a href="#" class="btn btn-outline btn-sm" target="_blank">
+                      <i data-feather="external-link" class="icon-sm"></i>
+                      Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline btn-sm" target="_blank">
+                      <i data-feather="github" class="icon-sm"></i>
+                      View Code
+                    </a>
+                  </div>
+                  <button class="btn btn-ghost btn-sm project-flip-btn">Back to Preview</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-inner">
+                <!-- Front of card -->
+                <div class="project-card-front">
+                  <div class="project-image">
+                    <img src="https://via.placeholder.com/600x300?text=Project+3" alt="Project Gamma">
+                  </div>
+                  <div class="project-content">
+                    <h3 class="project-title">Project Gamma</h3>
+                    <p class="project-description">
+                      A mobile-first web application for tracking fitness goals and nutrition.
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">React Native</span>
+                      <span class="tag">Firebase</span>
+                      <span class="tag">Redux</span>
+                    </div>
+                    <button class="btn btn-sm project-flip-btn">Learn More</button>
+                  </div>
+                </div>
+                <!-- Back of card -->
+                <div class="project-card-back">
+                  <h3 class="project-title">Project Gamma</h3>
+                  <p class="project-description">
+                    A mobile-first web application for tracking fitness goals and nutrition.
+                    This project showcases my ability to build cross-platform applications
+                    with a focus on user experience and performance.
+                  </p>
+                  <div class="project-actions">
+                    <a href="#" class="btn btn-outline btn-sm" target="_blank">
+                      <i data-feather="external-link" class="icon-sm"></i>
+                      Live Demo
+                    </a>
+                    <a href="#" class="btn btn-outline btn-sm" target="_blank">
+                      <i data-feather="github" class="icon-sm"></i>
+                      View Code
+                    </a>
+                  </div>
+                  <button class="btn btn-ghost btn-sm project-flip-btn">Back to Preview</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fun Interactive Section -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title text-center">Let's Have Some Fun</h2>
+          <div class="fun-container">
+            <div class="fun-card">
+              <h3 class="fun-title">Memory Game</h3>
+              <p class="fun-description">
+                Take a quick break and test your memory with this simple game.
+              </p>
+              <div class="memory-game" id="memoryGame">
+                <button class="btn btn-primary" id="startGameBtn">Start Game</button>
+                <div class="memory-grid" id="memoryGrid"></div>
+                <div class="memory-result" id="memoryResult"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="contact-container">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <p class="contact-subtitle">
+              Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+            </p>
+            <div class="social-links">
+              <a href="https://github.com/Ashmaan-2006" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i data-feather="github"></i>
+                <span class="sr-only">GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/ashmaan-sohail" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i data-feather="linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+              <a href="mailto:ashmaansohai@gmail.com" class="social-link">
+                <i data-feather="mail"></i>
+                <span class="sr-only">Email</span>
+              </a>
+            </div>
+            <div class="contact-form-container">
+              <form class="contact-form">
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="your.email@example.com">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" rows="5" class="form-textarea" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="copyright">
+            © <span id="currentYear"></span> Ashmaan Sohail. All rights reserved.
+          </div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
